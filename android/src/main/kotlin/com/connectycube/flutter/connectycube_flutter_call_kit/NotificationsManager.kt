@@ -130,7 +130,7 @@ fun createCallNotification(
         .setOngoing(true)
         .setCategory(NotificationCompat.CATEGORY_CALL)
         .setContentIntent(pendingIntent)
-        .setSound(ringtone)
+        .setDefaults(Notification.DEFAULT_SOUND)
         .setPriority(NotificationCompat.PRIORITY_MAX)
         .setTimeoutAfter(60000)
     return notificationBuilder
